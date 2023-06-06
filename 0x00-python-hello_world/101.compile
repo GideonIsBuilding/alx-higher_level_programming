@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Get the Python file name from the environment variable
+pyfile=$PYFILE
+
+# Check if the PYFILE environment variable is set
+if [ -z "$pyfile" ]; then
+  echo "Error: PYFILE environment variable is not set."
+  exit 1
+fi
+
+# Check if the Python file exists
+if [ ! -f "$pyfile" ]; then
+  echo "Error: Python file '$pyfile' does not exist."
+  exit 1
+fi
+
+# Compile the Python script
+python3 -m compileall -b "$pyfile"
+
+# Check if the compilation was successful
+if [ $? -eq 0 ]; then
+  echo "Python script compiled successfully."
+else
+  echo "Error occurred during compilation."
+fi
