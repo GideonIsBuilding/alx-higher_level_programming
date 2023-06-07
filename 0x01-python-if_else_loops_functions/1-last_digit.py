@@ -2,8 +2,9 @@
 import random
 number = random.randint(-10000, 10000)
 
-stringNumber = repr(number)
-lastN = int(stringNumber[-1])
+lastN = abs(number) % 10
+if number < 0:
+    lastN = lastN * -1
 
 if lastN > 5:
     print(f"Last digit of {number} is {lastN} and is greated than 5")
