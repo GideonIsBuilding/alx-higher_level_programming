@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
-for i in range(10):
-    for j in range(i + 1, 10):
-        if i == 8 and j == 9:
-            print("{}{}".format(i, j))
+for firstN in range(10):
+    for secN in range(firstN + 1, 10):
+        if firstN == 8 and secN == 9:
+            print("{}{}".format(firstN, secN))
         else:
-            print("{}{}, ".format(i, j), end="")
+            print("{}{}, ".format(firstN, secN), end="")
