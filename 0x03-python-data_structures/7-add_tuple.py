@@ -7,11 +7,11 @@ def add_tuple(tuple_a=(), tuple_b=()):
     Args:
         tuple_a: The first tuple.
         tuple_b: The second tuple.
-    
+
     Returns:
         A tuple with 2 integers:
-        The first element should be the addition of the first element of each argument
-        The second element should be the addition of the second element of each argument
+        First element is an addition of the first element of each argument
+        Second element is an addition of the second element of each argument
     """
 
     if len(tuple_a) == 0:
