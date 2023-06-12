@@ -15,7 +15,12 @@ Returns:
 def multiple_returns(sentence):
     length = len(sentence)
     first = sentence[0]
+    new_tuple = (length, first)
     if len(sentence) == 0:
-        return (length, None)
+        new_tuple = (length, None)
     else:
-        return (length, first)
+        new_tuple = (length, first)
+    
+    return (new_tuple)
+    
+
