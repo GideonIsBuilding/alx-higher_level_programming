@@ -20,7 +20,5 @@ def multiple_returns(sentence):
         new_tuple = (length, None)
     else:
         new_tuple = (length, first)
-    
-    return (new_tuple)
-    
 
+    return (new_tuple)
