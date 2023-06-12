@@ -8,8 +8,9 @@ Args:
     first: first letter of sentence
 
 Returns:
-    tuple with string length and sentence first character 
+    tuple with string length and sentence first character
 """
+
 
 def multiple_returns(sentence):
     length = len(sentence)
