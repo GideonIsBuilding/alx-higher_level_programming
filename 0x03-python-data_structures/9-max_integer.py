@@ -7,7 +7,7 @@ Args:
     i is the index number for elements in the list
 
 Returns:
-    The biggest integer of a list and returns None for empty list
+    The biggest integer of a list and returns None for empty
 """
 
 
@@ -16,9 +16,8 @@ def max_integer(my_list=[]):
 
     if len(my_list) == 0:
         return (None)
-    
-    for i in my_list:
-        if (i > maximum):
-            maximum = i
-
-    return maximum
+    else:
+        for i in my_list:
+            if (i > maximum):
+                maximum = i
+        return maximum
