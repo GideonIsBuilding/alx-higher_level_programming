@@ -28,7 +28,7 @@ def add_tuple(tuple_a=(), tuple_b=()):
     elif len(tuple_b) == 1:
         b1, b2 = tuple_b[0], 0
     elif len(tuple_b) == 2:
-        b1, b2 = tuple_b[0], 0
+        b1, b2 = tuple_b[0], tuple_b[1]
     else:
         b1, b2 = tuple_b[0], tuple_b[1]
 
