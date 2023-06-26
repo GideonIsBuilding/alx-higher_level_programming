@@ -2,6 +2,7 @@
 from sys import argv, exit
 from calculator_1 import add, sub, mul, div
 
+
 def main():
     length = len(argv) - 1
     operation = 0
@@ -19,9 +20,9 @@ def main():
             b = int(argv[count + 1])
 
             if sign == '+':
-                 operation = add(a, b)
-                 print(f"{a:d} {sign} {b:d} = {operation:d}")
-                 break
+                operation = add(a, b)
+                print(f"{a:d} {sign} {b:d} = {operation:d}")
+                break
             elif sign == '-':
                 operation = sub(a, b)
                 print(f"{a:d} {sign} {b:d} = {operation:d}")
