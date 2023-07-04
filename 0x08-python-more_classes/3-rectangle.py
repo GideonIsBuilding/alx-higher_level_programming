@@ -1,17 +1,17 @@
 #!/usr/bin/python3
 """
 
-Module defines a Rectangle class
+Module is contains class that defines a Rectangle
 
 
 """
 
 
 class Rectangle:
-    """ Class that defines a rectangle """
+    """ Class defines a rectangle """
 
     def __init__(self, width=0, height=0):
-        """ Method that initializes the instance
+        """ Method initializes the instance
 
         Args:
             width: rectangle width
@@ -25,7 +25,7 @@ class Rectangle:
 
     @property
     def width(self):
-        """ method that returns the value of the width
+        """ method returns the width
 
         Returns:
             rectangle width
@@ -37,7 +37,7 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        """ method that defines the width
+        """ method defines the width
 
         Args:
             value: width
@@ -111,3 +111,21 @@ class Rectangle:
             return 0
 
         return (2 * self.width) + (2 * self.height)
+
+    def __str__(self):
+        """ Method returns the Rectangle #
+
+        Returns:
+            str of the rectangle
+
+        """
+
+        rectangle = ""
+
+        if self.width == 0 or self.height == 0:
+            return rectangle
+
+        for i in range(self.height):
+            rectangle += ("#" * self.width) + "\n"
+
+        return rectangle[:-1]
