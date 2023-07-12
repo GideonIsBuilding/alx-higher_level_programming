@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+contains the lookup function
+"""
+
+
 def lookup(obj):
     """ Function that returns the list of available attributes
         and methods of an object
